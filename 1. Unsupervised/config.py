@@ -1,0 +1,14 @@
+CLASSES = 10
+SIZE = 512
+EPOCHS = 501                              # No. of epochs for training
+DECODER_ITERATIONS = 20                   # Decoder training after freezing encoder
+BATCH_SIZE = 1
+EVALUATION_INTERVAL = 20                  # Evaluation at every 20 epochs
+UPDATE_INTERVAL = 1                       # Evaluation at every 20 epochs
+WEIGHTAGE_REGULARIZATION = 0.0001
+#WEIGHTAGE_RECONS = 1
+LR = 3e-06                                # Learning Rate
+#COLOR_ARRAY = [[255,255,255],[255,0,0],[0,255,0],[0,165,255],[255,255,0],[0,0,255],[0,0,0],[255,0,255],[0,255,255],[128,128,128]] 
+COLOR_ARRAY = [[255,0,0],[0,255,0],[255,255,255],[0,128,128],[255,255,0],[0,0,255],[0,0,0],[128,128,128],[255,0,255],[0,255,255]]
+LABELS = [0,1,2,3,4,5,6,7,8,9]
+FILTERS_LAYER = [3,64,256,512,1024]
